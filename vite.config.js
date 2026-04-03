@@ -6,9 +6,10 @@ export default defineConfig({
   plugins: [
     react({
       babel: {
-        plugins: [['babel-plugin-react-compiler']],
+        plugins: [['babel-plugin-react-compiler']]
       },
-       base: '/monsters-rolodex/'
     }),
   ],
+  base: '/monsters-rolodex/', 
 })
+
