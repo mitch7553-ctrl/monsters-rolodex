@@ -1,13 +1,14 @@
 import './search-box.styles.css';
 
-const SearchBox = ({ onChangeHandler }) => {
-  return (
-    <input
-      className='search-box-container'
-      type='search'
-      onChange={onChangeHandler}
-    />
-  );
-};
+const SearchBox = ({ onChangeHandler, value }) => (
+  <input
+    aria-label="Search monsters by name"
+    className="search-box-container"
+    type="search"
+    placeholder="Search monsters"
+    value={value}
+    onChange={onChangeHandler}
+  />
+);
 
 export default SearchBox;
